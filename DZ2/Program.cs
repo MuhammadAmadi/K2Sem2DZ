@@ -8,6 +8,5 @@
 
 Console.WriteLine("Введите трехзначное число");
 string str = Console.ReadLine();
-
 if (str.Length >= 3) Console.WriteLine(str[2]);
 else Console.WriteLine("нет третьей цифры");

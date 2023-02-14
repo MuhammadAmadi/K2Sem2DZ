@@ -6,5 +6,5 @@
 
 Console.WriteLine("Введите трехзначное число");
 string str = Console.ReadLine();
-if (str.Length == 3) Console.WriteLine(str[1]); 
+if (str.Length == 3) Console.WriteLine(str[1]);
 else Console.WriteLine("Вы ввели не трехзначную цифру");
