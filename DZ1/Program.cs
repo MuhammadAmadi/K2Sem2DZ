@@ -5,7 +5,7 @@
 // 918 -> 1
 
 Console.WriteLine("Введите трехзначное число");
-int num = Convert.ToInt32(Console.ReadLine());
-string str = Convert.ToString(num);
-if (str.Length == 3) Console.WriteLine(str[1]);
-else Console.WriteLine("Вы ввели не трехзначную цифру");
+string str = Console.ReadLine();
+if (str.All(Char.IsDigit) && str.Length == 3) Console.WriteLine($"Вторая цифра {str[1]}");
+else if (str.All(Char.IsDigit)) Console.WriteLine("Вы ввели не трехзначную цифру");
+else Console.WriteLine("Ошибка!!! Введите только цифры!");
