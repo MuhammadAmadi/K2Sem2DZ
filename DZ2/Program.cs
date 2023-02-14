@@ -7,6 +7,7 @@
 // 32679 -> 6
 
 Console.WriteLine("Введите трехзначное число");
-string str = Console.ReadLine();
+int num = Convert.ToInt32(Console.ReadLine());
+string str = Convert.ToString(num);
 if (str.Length >= 3) Console.WriteLine(str[2]);
 else Console.WriteLine("нет третьей цифры");
