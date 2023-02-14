@@ -9,5 +9,5 @@
 Console.WriteLine("Введите трехзначное число");
 string str = Console.ReadLine();
 if (str.All(Char.IsDigit) && str.Length >= 3) Console.WriteLine($"Третья цифра {str[2]}");
-else if (str.All(Char.IsDigit))Console.WriteLine("Нет третьей цифры");
+else if (str.All(Char.IsDigit)) Console.WriteLine("Нет третьей цифры");
 else Console.WriteLine("Ошибка!!! Введите только цифры!");
